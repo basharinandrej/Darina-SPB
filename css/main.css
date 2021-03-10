@@ -11,10 +11,19 @@
     margin: 0 auto;
 }
 
+h1.title {
+    font-size: 62px;
+}
+
+h2.title {
+    font-size: 42px;
+}
+
 /* SPECIFICATION END */
 
 
 /* UI KIT START */
+
 .main-button {
     padding: 12px 24px;
     font-size: 18px;
@@ -39,10 +48,12 @@
 .title--accent-color {
     color: #fff;
 }
+
 /* UI KIT END */
 
 
 /* HEADER START*/
+
 .header {
     background-color: blue;
     padding-top: 24px;
@@ -82,4 +93,36 @@
 .header__main-button {
     margin-right: 16px;
 }
+
 /* HEADER END*/
+
+
+/*GALLERY START*/
+
+
+.section-gallery {
+    background-color: red;
+    padding-top: 32px;
+}
+
+.section-gallery__title {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+.main-gallery__item {
+    list-style: none;
+}
+
+
+/*GALLERY END*/
+
+
+/* FOOTER START */
+
+.footer {
+    display: flex;
+}
+
+/* FOOTER END */
