@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darina-SPB</title>
-    <link rel="shortcut icon" href="./img/logo.png" type="image/png">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body class="body">
     <header class="body__header header">
         <div class="header__container container">
             <div class="header__head head">
                 <a href="#" class="head__logo">
-                    <img src="./img/logo.png" alt="logo">
+                    <img src="./img/logo.png" class="head__logo-img" alt="logo">
                 </a>
                
-                <a class="head__phone" href="tel:8-921-883-23-28">8-921-883-23-28</a>
+                <a class="head__phone" href="tel:8-921-883-23-28">
+                    +7-921-883-23-28
+                </a>
             </div>
 
             <h1 class="header__title title title--accent-color">
@@ -27,55 +32,63 @@
             </p>
 
             <div class="header__wrapper">
-                <a href="#" class="header__main-button main-button">Все проекты</a>
-                <a href="#" class="header__ghost-button ghost-button">Контакты</a>
+                <a href="#gallery" class="header__main-button main-button">посмотреть проекты</a>
+                <a href="#footer" class="header__ghost-button ghost-button">как нас найти</a>
             </div>
         </div>
     </header>
 
-    <section class="body__section-gallery section-gallery">
+    <section id="gallery" class="body__section-gallery section-gallery">
         <div class="section-gallery__container container">
             <h2 class="section-gallery__title title">
-                Проекты 
+                Проекты
             </h2>
 
-            <ul class="main-gallery">
+            <ul class="section-gallery__main-gallery main-gallery">
                 <li class="main-gallery__item">
-                    <a href="#" class="main-gallery__link">
-                        <img src="" alt="photo">
+                    <a href="single-page_1.html" class="main-gallery__link">
+                        <img class="main-gallery__img" src="./img/imgs_1/1.jpg" alt="photo">
                     </a>
+                    <h3 class="main-gallery__title title">Проект 1</h3>
                 </li>
                 <li class="main-gallery__item">
-                    <a href="#" class="main-gallery__link">
-                        <img src="" alt="photo">
+                    <a href="single-page_2.html" class="main-gallery__link">
+                        <img class="main-gallery__img" src="./img/imgs_2/1.jpg" alt="photo">
                     </a>
+                    <h3 class="main-gallery__title title">Проект 2</h3>
+                </li>
+                <li class="main-gallery__item">
+                    <a href="single-page_3.html" class="main-gallery__link">
+                        <img class="main-gallery__img" src="img/imgs_3/1.jpg" alt="photo">
+                    </a>
+                    <h3 class="main-gallery__title title">Проект 3</h3>
                 </li>
             </ul>
         </div>
     </section>
 
-    <footer class="body__footer footer">
-        <div class="footer__map">
+    <footer id="footer" class="body__footer footer">
+        <div class="footer__container container">
+            <div class="footer__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A104e8d77b4fdc9048228db165d90c3590641ce8c97822a69f5d49598d1555449&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
 
-        </div>
+            <div class="footer__contacts contacts">
+                <p class="contacts__paragraph">
+                    г. Санкт-Петербург, Бизнес Центр "Лесной 63", Кантемировская ул. 22
+                </p>
 
-        <div class="footer__contacts contacts">
-            <h2 class="contacts__title title">
-                Проекты 
-            </h2>
-            <p class="contacts__paragraph">
-                г. Санкт-Петербург, Бизнес Центр "Лесной 63", Кантемировская ул. 22
-            </p>
+                <p class="contacts__paragraph">
+                    3 этаж, офис 320;
+                </p>
 
-            <p class="contacts__paragraph">
-                3 этаж, офис 320;
-            </p>
-
-            <p class="contacts__paragraph">
-                тел.: <a href="#" class="contacts__link">240-21-80</a> 
-            </p>
+                <p class="contacts__paragraph">
+                    тел.: <a href="#" class="contacts__link">240-21-80</a>
+                </p>
+            </div>
         </div>
     </footer>
+
     <script src='./js/main.js'></script>
 </body>
 </html>
